@@ -1,0 +1,38 @@
+Let us define the system, X' = F(X) 
+⎡x⎤
+⎢ ⎥
+⎣y⎦
+= 
+⎡x⋅(-4⋅x - 3⋅y + 60)⎤
+⎢                   ⎥
+⎣y⋅(-3⋅x - 2⋅y + 42)⎦
+With the equilibrium points
+[{x: 0, y: 0}, {x: 0, y: 21}, {x: 6, y: 12}, {x: 15, y: 0}]
+
+ The F Jacobian is 
+
+⎡-8⋅x - 3⋅y + 60       -3⋅x      ⎤
+⎢                                ⎥
+⎣     -3⋅y        -3⋅x - 4⋅y + 42⎦
+
+ The classified equilibrium points are 
+Eq point  0 is -> 0 0 with DF matrix: 
+⎡60  0 ⎤
+⎢      ⎥
+⎣0   42⎦
+Point is source
+Eq point  1 is -> 0 21 with DF matrix: 
+⎡-3    0 ⎤
+⎢        ⎥
+⎣-63  -42⎦
+Point is sink
+Eq point  2 is -> 6 12 with DF matrix: 
+⎡-24  -18⎤
+⎢        ⎥
+⎣-36  -24⎦
+Point is saddle
+Eq point  3 is -> 15 0 with DF matrix: 
+⎡-60  -45⎤
+⎢        ⎥
+⎣ 0   -3 ⎦
+Point is sink

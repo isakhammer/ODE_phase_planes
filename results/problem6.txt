@@ -1,0 +1,64 @@
+Let us define the system, X' = F(X) 
+⎡x⎤
+⎢ ⎥
+⎣y⎦
+= 
+⎡sin(x)⋅cos(y)⎤
+⎢             ⎥
+⎣sin(y)⋅cos(x)⎦
+With the equilibrium points
+⎡                            ⎧   π     π⎫  ⎧   π     3⋅π⎫                     
+⎢{x: 0, y: 0}, {x: 0, y: π}, ⎨x: ─, y: ─⎬, ⎨x: ─, y: ───⎬, {x: π, y: 0}, {x: π
+⎣                            ⎩   2     2⎭  ⎩   2      2 ⎭                     
+
+         ⎧   3⋅π     π⎫  ⎧   3⋅π     3⋅π⎫⎤
+, y: π}, ⎨x: ───, y: ─⎬, ⎨x: ───, y: ───⎬⎥
+         ⎩    2      2⎭  ⎩    2       2 ⎭⎦
+
+ The F Jacobian is 
+
+⎡cos(x)⋅cos(y)   -sin(x)⋅sin(y)⎤
+⎢                              ⎥
+⎣-sin(x)⋅sin(y)  cos(x)⋅cos(y) ⎦
+
+ The classified equilibrium points are 
+Eq point  0 is -> 0 0 with DF matrix: 
+⎡1  0⎤
+⎢    ⎥
+⎣0  1⎦
+Point is source
+Eq point  1 is -> 0 pi with DF matrix: 
+⎡-1  0 ⎤
+⎢      ⎥
+⎣0   -1⎦
+Point is sink
+Eq point  2 is -> pi/2 pi/2 with DF matrix: 
+⎡0   -1⎤
+⎢      ⎥
+⎣-1  0 ⎦
+Point is saddle
+Eq point  3 is -> pi/2 3*pi/2 with DF matrix: 
+⎡0  1⎤
+⎢    ⎥
+⎣1  0⎦
+Point is saddle
+Eq point  4 is -> pi 0 with DF matrix: 
+⎡-1  0 ⎤
+⎢      ⎥
+⎣0   -1⎦
+Point is sink
+Eq point  5 is -> pi pi with DF matrix: 
+⎡1  0⎤
+⎢    ⎥
+⎣0  1⎦
+Point is source
+Eq point  6 is -> 3*pi/2 pi/2 with DF matrix: 
+⎡0  1⎤
+⎢    ⎥
+⎣1  0⎦
+Point is saddle
+Eq point  7 is -> 3*pi/2 3*pi/2 with DF matrix: 
+⎡0   -1⎤
+⎢      ⎥
+⎣-1  0 ⎦
+Point is saddle
