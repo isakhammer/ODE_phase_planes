@@ -51,6 +51,7 @@ def phase_plane_plot(problem, range_x = (-1,1), range_y = None,
 
     plt.figure(problem.title)
     plt.title(problem.equation)
+    plt.grid()
     # plt.quiver(grid[0], grid[1], dfmat[:, :, 0], dfmat[:, :, 1], headwidth=0.2, width=0.01 )
     plt.streamplot(grid[0], grid[1], dfmat[:, :, 0], dfmat[:, :, 1])
     plt.contour(grid[0], grid[1], dfmat[:, :, 0], [0], colors = 'r')
@@ -71,7 +72,7 @@ def PlotProblems(show_plot = False):
     p1 = Problem(lambda x: [-2*x[0]*(x[0]-1)*(2*x[0]-1), -2*x[0]], "problem1",\
             r'$d/dt [x, y] = [-2x(x-1)(2x-1), -2y]$', \
             sy.Matrix([ -2*x*(x-1)*(2*x-1), -2*y ]))
-    phase_plane_plot(problem=p1, range_x = (-5, 5), show = show_plot)
+    phase_plane_plot(problem=p1, range_x = (-0.5, 1.5), range_y=(-0.5,0.5), show = show_plot)
 
     p2 = Problem(lambda x: [x[0]*(4-2*x[0]-x[1]), x[1]*(3-x[0] -x[1])], "problem2", \
             r'$d/dt [x, y] = [x(4-2x-y), y(3-x-y)]$', \
